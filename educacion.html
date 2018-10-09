@@ -44,25 +44,66 @@
          <h2>Enlances</h2>
          <ul>
             <li><a href="index.html">Index</a></li>
-            <li><a href="educacion.html">Educacion</a></li>
+            <!-- <li><a href="url">Educacion</a></li> -->
             <li><a href="experiencia.html">Experiencia</a></li>
          </ul>
       </nav>
       <section>
-         <h2> Información Personal</h2>
-         <img src="image/image.jpg" alt="Code" height="250" width="500">
+         <h2>Educacion</h2>
+         <table border="1">
+            <thead>
+               <tr>
+                  <th>Anio</th>
+                  <th>Institucion</th>
+                  <th>Lugar</th>
+                  <th>Culmino?</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>2007</td>
+                  <td>Universidad Tecnologica</td>
+                  <td>Panama</td>
+                  <td>No</td>
+               </tr>
+            </tbody>
+            <tfoot>
+               <tr>
+                  <td>2009</td>
+                  <td>Universidad Latina de Panama</td>
+                  <td>Panama</td>
+                  <td>Si</td>
+               </tr>
+            </tfoot>
+         </table>
       </section>
       <section>
-         <h2> Perfil</h2>
-         <article>
-            <p>Formar parte de una empresa en la que pueda poner en práctica todos mis conocimientos, que me brinde la oportunidad de alcanzar todas mis metas trazadas, y que me ofrezca la oportunidad de crecer en el área laboral, personal e intelectual..</p>
-            <p>Lenguajes Dominados: 
-            <ul>
-               <li>Ingles </li>
-               <li>Espaniol</li>
-            </ul>
+         <h3>Agregar Estudios</h3>
+         <form  id="textform">
+            <select name="Anios">
+               <option value="2005">2005</option>
+               <option value="2006">2006</option>
+               <option value="2007">2007</option>
+               <option value="2008">2008</option>
+               <option value="2009">2009</option>
+               <option value="2010">2010</option>
+               <option value="2011">2011</option>
+               <option value="2012">2012</option>
+               <option value="2013">2013</option>
+               <option value="2014">2014</option>
+               <option value="2015">2015</option>
+               <option value="2016">2016</option>
+               <option value="2017">2017</option>
+               <option value="2018">2018</option>
+            </select>
+            <br>
+            <p>Institucion:  <input type="text" name="Institucion" required ></p>
+            <p>lugar:<textarea rows="2" cols="25" name="comentario" form="textform">
+               </textarea>
             </p>
-         </article>
+            <br>
+            <input type="submit" value="Submit">
+         </form>
       </section>
       <footer>
          <p>Creado por: Carlos Ponte</p>
